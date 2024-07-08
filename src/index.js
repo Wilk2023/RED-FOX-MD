@@ -56,8 +56,8 @@ const store = makeInMemoryStore({
 const __filename = new URL(import.meta.url).pathname;
 const __dirname = path.dirname(__filename);
 
-const sessionDir = path.join(__dirname, './session');
-const credsPath = path.join(sessionDir, './session/creds.json');
+const sessionDir = path.join(__dirname, '/session');
+const credsPath = path.join(sessionDir, '../session/creds.json');
 
 if (!fs.existsSync(sessionDir)) {
     fs.mkdirSync(sessionDir, { recursive: true });
